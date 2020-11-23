@@ -1,0 +1,140 @@
+.page-content {
+  hr {
+    border: 1px solid #a7a7a7;
+  }
+
+  @include media-breakpoint-down(md) {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .page-home {
+    .header {
+      @include media-breakpoint-down(md) {
+        img {
+          width: 65% !important;
+        }
+      }
+
+      .header-title {
+        p {
+          margin-top: 10px;
+          margin-bottom: 30px;
+          color: #70757a;
+        }
+
+        i {
+          color: #000000;
+          font-size: 30px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        @include media-breakpoint-down(md) {
+          h2 {
+            font-size: 1.25rem;
+          }
+
+          h5 {
+            font-size: 16px;
+          }
+
+          p {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .page-profile {
+    .profile-item {
+      i {
+        width: 5%;
+        margin-right: 15px;
+        float: left;
+
+        .icon {
+          float: left;
+        }
+
+        .fa {
+          font-size: 20px;
+          color: black;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .page-portfolio {
+    .progress {
+      background-color: #c4c4c4;
+
+      .progress-bar {
+        background-color: #000000;
+      }
+    }
+
+    .component-portfolio {
+      margin-bottom: 20px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .portfolio-thumbnail {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &:hover,
+        &:focus {
+          .portfolio-image {
+            transform: scale(1.1);
+          }
+        }
+
+        .portfolio-image {
+          width: 100%;
+          height: 100%;
+          background-color: #dddddd;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .portfolio-text {
+        font-weight: normal;
+        font-size: 18px;
+        color: #0c0d36;
+        margin-top: 12px;
+      }
+
+      .portfolio-price {
+        font-weight: 200;
+        font-size: 12px;
+        font-style: italic;
+        color: #70757a;
+      }
+    }
+  }
+
+  .page-contact {
+    .map {
+      border-top: 3px solid #000000;
+      border-bottom: 3px solid #000000;
+    }
+  }
+}
